@@ -1,0 +1,206 @@
+/* Base Styles */
+body {
+    margin: 0;
+    background: url("bgimg.png") center top no-repeat fixed;
+    background-size: cover;
+    background-color: lightblue;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.grandparent {
+    height: 46.4674%; 
+    max-width: 81.8026%;
+    width: 78.66646%;
+    background: linear-gradient(rgba(255, 255, 255, 0.09025), rgba(255, 255, 255, 0.09025));
+    backdrop-filter: blur(8.619875px);
+    border: 0.9025px solid #fff;
+    box-shadow: 30.9512375px 30.9512375px 7.738225px rgba(0, 0, 0, 0.361);
+    border-radius: 15.477875px;
+    padding: 1.548025rem;
+    margin: 1.548025rem auto;
+}
+
+.parent {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 857.375;
+    font-size: 0.9286725rem;
+    gap: 0.7738035rem;
+    margin: 0.7738035rem;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 1.7080715rem;
+    color: #a9cff5;
+}
+
+h3 {
+    font-size: 1.63705175rem;
+    color: #a9cff5;
+}
+
+/* Button Styles */
+.button, .button1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4510395rem;
+    font-weight: 857.375;
+    border-radius: 15.477875px;
+    border: 0.9025px solid #ccc;
+    padding: 0.38690175rem;
+    background: rgba(255, 255, 255, 0.09025);
+    box-shadow: 0 0 0.9025px rgba(0, 0, 0, 0.361);
+    margin: 0.38690175rem;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 8.57375px;
+    margin-top: 1.1597125rem;
+    font-weight: 857.375;
+}
+
+.button {
+    width: calc(100% - 30.286095rem);
+    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255,0.1);
+    box-shadow: 0 0 0.9025px rgba(0, 0, 0, 0.361);
+}
+.button1 {
+    width: calc(100% - 30.286095rem);
+    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255,0.1);
+    box-shadow: 0 0 0.9025px rgba(0, 0, 0, 0.361);
+}
+
+
+.button:hover, .button1:hover {
+    font-weight: 857.375;
+    background: rgba(255, 255, 255, 0.45); /* Reduced by 5% */
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 0px rgba(0, 0, 0, 0.4); /* Reduced by 5% */
+}
+
+/* Input Field Styles */
+.fields, .blank, .blank1 {
+    border-radius: 23.2845px;
+    border: 0.9025px solid whitesmoke;
+    outline: none;
+    margin-bottom: 0.38690175rem;
+    background-color: transparent;
+    color: white;
+    box-sizing: border-box;
+    margin: 0.514425rem;
+}
+
+/* Placeholder Styles */
+.fields::placeholder, .blank::placeholder, .blank1::placeholder {
+    color: aliceblue;
+}
+
+/* .fields Styles */
+.fields {
+    padding: 18.05px;
+    width: 433.2px;
+    height: 1.548025rem;
+    text-indent: 0.485412rem;
+    color: #e3eefa;
+    margin: 0.153425rem;
+    display: grid;
+}
+
+/* .blank Styles */
+.blank {
+    display: flex;
+    padding: 18.05px;
+    width: 194.0375px;
+    height: 1.548025rem;
+    text-indent: 0.485412rem;
+    margin: auto;
+    color: #e3eefa;
+}
+
+/* .blank1 Styles */
+.blank1 {
+    display: flex;
+    padding: 18.05px;
+    width: 194.0375px;
+    height: 1.548025rem;
+    text-indent: 0.485412rem;
+    margin: auto;
+    color: #e3eefa;
+}
+
+/* Container for Buttons */
+.ABC {
+    display: flex;
+    background-color: transparent;
+}
+
+/* Image Styles */
+.img {
+    display: block;
+    margin: 1.548025rem auto;
+    width: 100%;
+    max-width: 372.36485px;
+    height: auto;
+    background-size: cover;
+    justify-content: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .grandparent {
+        padding: 0.7738035rem;
+        margin: 0.7738035rem auto;
+    }
+
+    .button, .button1 {
+        font-size: 1.1597125rem;
+        width: calc(100% - 0.7738035rem);
+    }
+
+    .fields, .blank, .blank1 {
+        width: calc(100% - 0.9286725rem);
+        left: 386.90175px;
+    }
+
+    .img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .grandparent {
+        width: 73.508625%;
+        padding: 0.38690175rem;
+    }
+
+    .parent {
+        font-size: 0.7738035rem;
+    }
+
+    h2 {
+        font-size: 1.1597125rem;
+    }
+
+    h3 {
+        font-size: 0.96720925rem;
+    }
+
+    .button, .button1 {
+        font-size: 0.96720925rem;
+        width: 100%;
+    }
+
+    .fields, .blank, .blank1 {
+        width: 100%;
+    }
+}
